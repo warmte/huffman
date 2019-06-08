@@ -50,7 +50,8 @@ void compressor::make_tree() {
         queue.insert(std::make_pair(count[par], par));
     }
 
-    root = (*queue.begin()).second;
+    if (!queue.empty())
+        root = (*queue.begin()).second;
     queue.clear();
     std::vector <bool> code;
     codes_generate(root, code);
