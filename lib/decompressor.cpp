@@ -36,7 +36,10 @@ void decompressor::make_tree() {
         queue.insert(std::make_pair(count[par], par));
     }
 
-    if (!queue.empty()) root = (*queue.begin()).second;
+    if (!queue.empty())
+        root = (*queue.begin()).second;
+    else
+        return;
     queue.clear();
 }
 

@@ -52,6 +52,8 @@ void compressor::make_tree() {
 
     if (!queue.empty())
         root = (*queue.begin()).second;
+    else
+        return;
     queue.clear();
     std::vector <bool> code;
     codes_generate(root, code);

@@ -55,8 +55,8 @@ void work() {
         std::cout << "FAILED:   decompressed and initial files are not equal.\n";
         exit(0);
     }
-    time = clock() - time;
-    std::cout << "OK:   working time is " << time << " ms." << "\n";
+    time = (clock() - time) / CLOCKS_PER_SEC;
+    std::cout << "OK:   working time is " << time << " sec." << "\n";
 }
 
 void run_tests() {
@@ -125,14 +125,14 @@ void run_tests() {
 }
 
 void test_empty() {
-    std::cout << "TEST EMPTY     |    ";
+    std::cout << "TEST EMPTY    |    ";
     std::ofstream fa(a);
     fa.close();
     work();
 }
 
 void test1() {
-    std::cout << "TEST 1         |    ";
+    std::cout << "TEST 1        |    ";
     std::ofstream fa(a);
     fa << "1041074 1 83408 0198 09\n  78173987  3 ";
     fa.close();
@@ -140,7 +140,7 @@ void test1() {
 }
 
 void test2() {
-    std::cout << "TEST 2         |    ";
+    std::cout << "TEST 2        |    ";
     std::ofstream fa(a);
     fa << "jdsjh jhhdsjh  bsbdkjb bsb ksb 198 09\n    d \nc d s ds dd  d s  3 ";
     fa.close();

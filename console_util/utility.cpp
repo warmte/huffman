@@ -40,7 +40,8 @@ void decompress_file(char const *in_name, char const *out_name) {
     while (!input.eof()) {
         input.read_block(buf);
         decoded.clear();
-        decompr.decompress(buf, decoded);
+        if (!buf.empty())
+            decompr.decompress(buf, decoded);
         output.write_block(decoded, "");
     }
 }
