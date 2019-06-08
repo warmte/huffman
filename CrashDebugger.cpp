@@ -951,7 +951,7 @@ static Error ReduceInsts(BugDriver &BD, BugTester TestFn) {
       for (const BasicBlock &BB : F)
         for (const Instruction &I : BB)
           if (!isa<TerminatorInst>(&I))
-              Insts.push_back(&I);
+            Insts.push_back(&I);
 
     Expected<bool> Result =
         ReduceCrashingInstructions(BD, TestFn).reduceList(Insts);
@@ -1223,4 +1223,3 @@ Error BugDriver::debugCodeGeneratorCrash() {
 
   return DebugACrash(*this, TestForCodeGenCrash);
 }
-   

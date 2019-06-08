@@ -49,16 +49,12 @@ void decompressor::decompress(std::vector <unsigned char> const &data, std::vect
         for (uint32_t i = 0; i < sum; ++i) new_data.push_back((unsigned char)cur);
         return;
     }
-    uint32_t symb = 0;
     for (unsigned char c : data) {
         for (int i = 7; i >= 0; --i) {
             bool b = bool(((uint32_t)c >> i) & 1);
             cur = (b ? children[cur].second : children[cur].first);
             if (children[cur].first == -1) {
                 new_data.push_back((unsigned char)cur);
-                symb++;
-                if (symb == sum)
-                    break;
                 cur = root;
             }
         }

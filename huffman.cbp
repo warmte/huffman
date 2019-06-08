@@ -65,34 +65,6 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="huffman_tester">
-				<Option output="/home/ilona/CLionProjects/huffman/huffman_tester" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ilona/CLionProjects/huffman"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 huffman_tester"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="huffman_tester/fast">
-				<Option output="/home/ilona/CLionProjects/huffman/huffman_tester" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ilona/CLionProjects/huffman"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 huffman_tester/fast"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="huflibrary">
 				<Option output="/home/ilona/CLionProjects/huffman/libhuflibrary.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/ilona/CLionProjects/huffman"/>
@@ -121,42 +93,109 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="huffman_tester">
+				<Option output="/home/ilona/CLionProjects/huffman/huffman_tester" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ilona/CLionProjects/huffman"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 huffman_tester"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="huffman_tester/fast">
+				<Option output="/home/ilona/CLionProjects/huffman/huffman_tester" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ilona/CLionProjects/huffman"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 huffman_tester/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="UTILITY">
+				<Option output="/home/ilona/CLionProjects/huffman/UTILITY" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ilona/CLionProjects/huffman"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 UTILITY"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="UTILITY/fast">
+				<Option output="/home/ilona/CLionProjects/huffman/UTILITY" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ilona/CLionProjects/huffman"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 UTILITY/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ilona/CLionProjects/huffman/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/home/ilona/CLionProjects/huffman/UTILITY.cpp">
+			<Option target="UTILITY"/>
+		</Unit>
 		<Unit filename="/home/ilona/CLionProjects/huffman/console_util/block_rw.cpp">
 			<Option target="huflib"/>
 			<Option target="huffman_tester"/>
+			<Option target="UTILITY"/>
 		</Unit>
 		<Unit filename="/home/ilona/CLionProjects/huffman/console_util/block_rw.h">
 			<Option target="huflib"/>
 			<Option target="huffman_tester"/>
+			<Option target="UTILITY"/>
 		</Unit>
 		<Unit filename="/home/ilona/CLionProjects/huffman/console_util/utility.cpp">
 			<Option target="huflib"/>
 			<Option target="huffman_tester"/>
+			<Option target="UTILITY"/>
 		</Unit>
 		<Unit filename="/home/ilona/CLionProjects/huffman/console_util/utility.h">
 			<Option target="huflib"/>
 			<Option target="huffman_tester"/>
+			<Option target="UTILITY"/>
 		</Unit>
 		<Unit filename="/home/ilona/CLionProjects/huffman/huffman_tester.cpp">
 			<Option target="huflib"/>
 			<Option target="huffman_tester"/>
 		</Unit>
 		<Unit filename="/home/ilona/CLionProjects/huffman/lib/compressor.cpp">
-			<Option target="huffman_tester"/>
 			<Option target="huflibrary"/>
+			<Option target="huffman_tester"/>
+			<Option target="UTILITY"/>
 		</Unit>
 		<Unit filename="/home/ilona/CLionProjects/huffman/lib/compressor.h">
-			<Option target="huffman_tester"/>
 			<Option target="huflibrary"/>
+			<Option target="huffman_tester"/>
+			<Option target="UTILITY"/>
 		</Unit>
 		<Unit filename="/home/ilona/CLionProjects/huffman/lib/decompressor.cpp">
-			<Option target="huffman_tester"/>
 			<Option target="huflibrary"/>
+			<Option target="huffman_tester"/>
+			<Option target="UTILITY"/>
 		</Unit>
 		<Unit filename="/home/ilona/CLionProjects/huffman/lib/decompressor.h">
-			<Option target="huffman_tester"/>
 			<Option target="huflibrary"/>
+			<Option target="huffman_tester"/>
+			<Option target="UTILITY"/>
 		</Unit>
 		<Unit filename="/home/ilona/CLionProjects/huffman/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
