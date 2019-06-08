@@ -10,10 +10,10 @@ block_rw::block_rw(const char *name, const char *_rw) {
     }
 }
 
-void block_rw::read_block(std::vector<unsigned char> &buf) {
-    buf = std::vector <unsigned char> (SIZE);
-    size_t cnt = fread(buf.data(), 1, SIZE, file);
-    if (cnt != SIZE) {
+void block_rw::read_block(std::vector<unsigned char> &buf, size_t size) {
+    buf = std::vector <unsigned char> (size);
+    size_t cnt = fread(buf.data(), 1, size, file);
+    if (cnt != size) {
         buf.erase(buf.begin() + cnt, buf.end());
         if (ferror(file)) {
             std::cerr << "ERROR: cannot read data from the file.\n";
@@ -64,4 +64,13 @@ void block_rw::read_freq(std::vector<uint32_t> &count) {
             exit(0);
         }
     }
+}
+
+void block_rw::read_sum(uint32_t &sum) {
+    char c;
+    std::fscanf(file, "%u%c", &sum, &c);
+}
+
+void block_rw::write_sum(uint32_t const sum) {
+    std::fprintf(file, "%u%c", sum, ' ');
 }

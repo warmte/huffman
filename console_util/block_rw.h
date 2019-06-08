@@ -12,11 +12,14 @@ struct block_rw {
     block_rw(const char *name, const char *rw);
     ~block_rw();
 
-    void read_block(std::vector <unsigned char> &buf);
+    void read_block(std::vector <unsigned char> &buf, size_t size);
     void write_block(std::vector <unsigned char> const &buf, const char *sep);
 
     void read_freq(std::vector <uint32_t> &count);
     void write_freq(std::vector <uint32_t> const &count);
+
+    void read_sum(uint32_t &sum);
+    void write_sum(uint32_t const sum);
 
     bool eof();
 

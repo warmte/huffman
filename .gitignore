@@ -5,9 +5,10 @@ CMakeFiles
 cmake_install.cmake
 CMakeCache.txt
 Makefile
-bigint.cbp
+huffman.cbp
 main.cpp
+a.cpp
+b.cpp
+c.cpp
 
-big_integer_main
-big_integer_testing
 perf*
